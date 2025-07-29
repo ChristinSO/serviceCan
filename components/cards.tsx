@@ -33,21 +33,21 @@ export const Cards: React.FC = () => {
     },
     // Row 2
     {
-      title: "Security Settings",
-      description: "Update your security preferences.",
+      title: "Passport Program Statistics",
+      description: "Statistics Canada reports related to passport services.",
       iconType: "svg" as const,
       iconContent: securitySvg,
     },
     {
-      title: "Document Upload",
-      description: "Upload required documents.",
+      title: "Special Passport",
+      description: "Apply for a special or diplomatic passport.",
       iconType: "image" as const,
       iconContent: "https://api.builder.io/api/v1/image/assets/TEMP/a7aab15d6216335c894a65cfbf3a093662df916e?width=600",
       altText: "Document Upload",
     },
     {
-      title: "Help & Support",
-      description: "Get help with your application.",
+      title: "Passport Safety",
+      description: "How to keep your passport safe after getting it.",
       iconType: "image" as const,
       iconContent: "https://api.builder.io/api/v1/image/assets/TEMP/c8d8ab7639216aac443ebe9ad4a9007828d06c6c?width=600",
       altText: "Help & Support",
