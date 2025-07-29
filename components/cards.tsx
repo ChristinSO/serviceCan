@@ -36,10 +36,10 @@ export const Cards: React.FC = () => {
     // Row 2
     {
       title: "Passport Program Statistics",
-      description: "Statistics Canada reports related to passport services.",
+      description: "Reports related to passport services.",
       iconType: "svg" as const,
       iconContent: securitySvg,
-      href: "https://www.canada.ca/en/employment-social-development/programs/passport/statistics.htmlhttps://www.canada.ca/en/employment-social-development/programs/passport/statistics.html",
+      href: "https://www.canada.ca/en/employment-social-development/programs/passport/statistics.html",
     },
     {
       title: "Special Passport",
