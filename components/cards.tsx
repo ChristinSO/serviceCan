@@ -14,7 +14,7 @@ export const Cards: React.FC = () => {
     // Row 1
     {
       title: "Adult Passport Checklist",
-      description: "Apply for your new adult passport.",
+      description: "Understand the Requirements.",
       iconType: "svg" as const,
       iconContent: passportIconSvg,
       href: "/passport-application",
