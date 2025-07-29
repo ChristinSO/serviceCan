@@ -24,12 +24,14 @@ export const Cards: React.FC = () => {
       description: "Check for your application status.",
       iconType: "svg" as const,
       iconContent: statusCheckerSvg,
+      href: "https://etatpasseport-passportstatus.service.canada.ca/en/expectations",
     },
     {
       title: "FAQ",
       description: "Clear your doubts based on previously answered questions.",
       iconType: "svg" as const,
       iconContent: emailSvg,
+      href: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/help-centre/travel-information.html",
     },
     // Row 2
     {
@@ -37,19 +39,20 @@ export const Cards: React.FC = () => {
       description: "Statistics Canada reports related to passport services.",
       iconType: "svg" as const,
       iconContent: securitySvg,
+      href: "https://www.canada.ca/en/employment-social-development/programs/passport/statistics.htmlhttps://www.canada.ca/en/employment-social-development/programs/passport/statistics.html",
     },
     {
       title: "Special Passport",
       description: "Apply for a special or diplomatic passport.",
       iconType: "image" as const,
-      iconContent: "https://api.builder.io/api/v1/image/assets/TEMP/a7aab15d6216335c894a65cfbf3a093662df916e?width=600",
+      iconContent: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/official-travel.html",
       altText: "Document Upload",
     },
     {
       title: "Passport Safety",
       description: "How to keep your passport safe after getting it.",
       iconType: "image" as const,
-      iconContent: "https://api.builder.io/api/v1/image/assets/TEMP/c8d8ab7639216aac443ebe9ad4a9007828d06c6c?width=600",
+      iconContent: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/passport-tips.html",
       altText: "Help & Support",
     },
   ]
