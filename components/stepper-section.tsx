@@ -805,7 +805,7 @@ export function StepperSection({
     },
     {
       id: 6,
-      title: "Submit your application",
+      title: "Submit your application in person",
       content: (
         <div className="space-y-6">
           <h2 className="text-xl font-bold text-[#26374a]">Submit your application</h2>
