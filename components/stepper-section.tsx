@@ -1196,7 +1196,7 @@ export function StepperSection({
                     <div className="flex items-center justify-between">
                       <div>
                         <div className="flex items-center space-x-3 mb-1">
-                          <span className="text-sm font-semibold text-[#666666]">Step {step.id} of 10</span>
+                          <span className="text-sm font-semibold text-[#666666]">Step {step.id} of 8</span>
                           {step.hasTooltip && (
                             <TooltipProvider>
                               <Tooltip>
