@@ -128,7 +128,7 @@ export function StepperSection({
   const steps = [
     {
       id: 1,
-      title: `Determine your needs`,
+      title: `Determine your needs and calculate estimated fees`,
       subtitle: `Total Fee: $${totalFee}`,
       content: (
         <div className="space-y-6">
