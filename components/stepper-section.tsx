@@ -747,7 +747,7 @@ export function StepperSection({
           <ul className="text-base leading-relaxed text-[#333333] list-disc pl-5 space-y-4">
             <li>
               <a 
-                href="#" 
+                href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/new-adult-passport/citizenship-proof.html" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline hover:text-blue-800"
@@ -760,7 +760,7 @@ export function StepperSection({
                     <li>If you have a <strong>paper</strong> certificate, it must be the original document, not a photocopy.</li>
                     <li>If you have a citizenship <strong>e-certificate</strong>, you must attach a{' '}
                       <a 
-                        href="#" 
+                        href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/proof-citizenship/valid.html#e-certificate-print" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 underline hover:text-blue-800"
@@ -776,7 +776,7 @@ export function StepperSection({
             <li>
               a{' '}
               <a 
-                href="#" 
+                href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/new-adult-passport/identity-documents.html" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline hover:text-blue-800"
@@ -837,7 +837,7 @@ export function StepperSection({
                   <p className="text-[#333333] text-base leading-relaxed mb-3">
                     You can{' '}
                     <a 
-                      href="#" 
+                      href="https://eservices.canada.ca/en/reservation/" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 underline hover:text-blue-800"
@@ -855,7 +855,7 @@ export function StepperSection({
                   <p className="text-[#333333] text-base leading-relaxed mb-3">
                     Go to a{' '}
                     <a 
-                      href="#" 
+                      href="https://ircc.canada.ca/english/passport/map/map.asp?service=express#table1caption" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 underline hover:text-blue-800"
