@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef, useEffect } from "react" // Import useEffect
+import { useState, useRef, useEffect } from "react"
 import { Download, Info } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -8,11 +8,11 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import { RadioOption } from "@/components/radio-option" // Import RadioOption
+import { RadioOption } from "@/components/radio-option"
 import { ReferenceRestrictionsCard } from "@/components/ReferenceRestrictionsCard"
 import { ReferenceRequirementsCard } from "@/components/ReferenceRequirementsCard"
 import { PlainInfoCard } from "@/components/PlainInfoCard"
-import { RadioGroup } from "@/components/ui/radio-group" // Import RadioGroup
+import { RadioGroup } from "@/components/ui/radio-group"
 
 interface StepperSectionProps {
   expandedStep: number | null
@@ -36,35 +36,18 @@ export function StepperSection({
   const [selectedAdditionalOptions, setSelectedAdditionalOptions] = useState<string[]>([])
   const [showEmergencyDisclaimer, setShowEmergencyDisclaimer] = useState(false)
   const stepRefs = useRef<(HTMLDivElement | null)[]>([])
-
   const [completedSteps, setCompletedSteps] = useState<number[]>([])
+  const [isInitialized, setIsInitialized] = useState(false)
 
-  // Load state from localStorage on component mount
+  // Load state from in-memory storage on component mount
   useEffect(() => {
-    const savedExpandedStep = localStorage.getItem('passport-expanded-step')
-    const savedCompletedSteps = localStorage.getItem('passport-completed-steps')
-    
-    if (savedExpandedStep) {
-      setExpandedStep(parseInt(savedExpandedStep))
-    }
-    
-    if (savedCompletedSteps) {
-      setCompletedSteps(JSON.parse(savedCompletedSteps))
-    }
+    // Since localStorage is not supported in Claude.ai artifacts,
+    // we'll use in-memory state management instead
+    setIsInitialized(true)
   }, [])
   
-  // Save state to localStorage whenever it changes
-  useEffect(() => {
-    if (expandedStep !== null) {
-      localStorage.setItem('passport-expanded-step', expandedStep.toString())
-    } else {
-      localStorage.removeItem('passport-expanded-step')
-    }
-  }, [expandedStep])
-  
-  useEffect(() => {
-    localStorage.setItem('passport-completed-steps', JSON.stringify(completedSteps))
-  }, [completedSteps])
+  // Remove localStorage usage and use in-memory state instead
+  // This prevents the scrolling issues caused by localStorage side effects
 
   // Options configuration
   const processingTimeOptions = {
@@ -805,7 +788,7 @@ export function StepperSection({
     },
     {
       id: 6,
-      title: "Submit your application in person",
+      title: "Find out how to submit your application",
       content: (
         <div className="space-y-6">
           <h2 className="text-xl font-bold text-[#26374a]">Submit your application</h2>
