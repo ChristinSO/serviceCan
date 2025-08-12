@@ -19,7 +19,6 @@ export default function PassportApplication() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto py-8">
-        {/* Main content area for the application */}
         <main id="main-content" className="lg:w-4/5 w-full mx-auto">
           <StepperSection
             expandedStep={expandedStep}
@@ -31,7 +30,6 @@ export default function PassportApplication() {
           />
         </main>
       </div>
-
       <Chatbot />
     </div>
   )

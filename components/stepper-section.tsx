@@ -1357,7 +1357,7 @@ export function StepperSection({
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex-1 min-w-0">
-                        <h3 className="text-base sm:text-lg font-bold text-[#26374a] pr-4">{step.title}</h3>
+                        <h2 className="text-base sm:text-lg font-bold text-[#26374a] pr-4">{step.title}</h2>
                         {step.subtitle && (
                           <p className="text-sm sm:text-base font-semibold text-[#af3c43] mt-1">{step.subtitle}</p>
                         )}

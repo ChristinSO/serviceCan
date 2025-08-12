@@ -7,7 +7,7 @@ export function FooterMainBand() {
       <div className="mt-6 max-w-full w-[1140px]">
         <div className="gap-6 max-md:max-w-full">
           <div className="gap-6 w-full max-w-[1140px] max-md:max-w-full">
-            <nav className="flex flex-wrap gap-12 items-start w-full text-base text-white">
+          <nav className="flex flex-wrap gap-12 items-start w-full text-base text-white" aria-label="Government contacts and departments">
               <ul className="flex flex-wrap gap-12 items-start w-full">
                 <li className="flex-1 shrink text-base leading-6 text-white basis-0">
                   <a href="#" className="text-base leading-6 text-white hover:underline">
@@ -30,7 +30,7 @@ export function FooterMainBand() {
               <div className="flex w-10 bg-white fill-white min-h-1" />
             </div>
           </div>
-          <nav className="gap-6 mt-6 w-full text-base text-white max-w-[1140px] max-md:max-w-full">
+          <nav className="gap-6 mt-6 w-full text-base text-white max-w-[1140px] max-md:max-w-full" aria-label="Government services and topics">
             <ul className="flex flex-wrap gap-12 items-start w-full">
               <li className="flex-1 shrink text-base leading-6 text-white basis-0">
                 <a href="#" className="text-base leading-6 text-white hover:underline">
