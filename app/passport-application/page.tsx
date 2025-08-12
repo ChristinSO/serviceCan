@@ -18,9 +18,9 @@ export default function PassportApplication() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto py-8">
         {/* Main content area for the application */}
-        <main id="main-content" className="w-4/5 mx-auto">
+        <main id="main-content" className="lg:w-4/5 w-full mx-auto">
           <StepperSection
             expandedStep={expandedStep}
             setExpandedStep={setExpandedStep}
