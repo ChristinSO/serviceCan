@@ -12,7 +12,7 @@ export default function PassportApplication() {
   const handleStep9Submit = () => {
     if (step9Input.trim()) {
       setStep10Expanded(true)
-      setExpandedStep(10) // Automatically expand step 10 when input is submitted
+      setExpandedStep(10) // another relic, modify if you have the patience
     }
   }
 

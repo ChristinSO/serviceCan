@@ -21,7 +21,7 @@ export function RadioOption({ id, name, value, label, checked, onChange, fee }: 
         value={value}
         id={id}
         checked={checked}
-        onClick={() => onChange(value)} // Use onClick to handle toggle behavior
+        onClick={() => onChange(value)} // on click to toggle
         className={cn(
           "h-4 w-4 border-2 border-gray-400 data-[state=checked]:bg-[#26374a] data-[state=checked]:border-[#26374a]",
           "focus:ring-2 focus:ring-[#3b99fc] focus:ring-offset-2", // Added focus styles

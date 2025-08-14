@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { RadioGroup } from "@/components/ui/radio-group"
 
-// Simple RadioOption component since it's not in shadcn/ui
+// radio
 const RadioOption = ({ id, name, value, label, checked, onChange }) => (
   <div className="flex items-center space-x-2">
     <input
@@ -28,7 +28,7 @@ const RadioOption = ({ id, name, value, label, checked, onChange }) => (
   </div>
 )
 
-// Simple card components
+// cards
 const ReferenceRequirementsCard = ({ title, items }) => (
   <div className="p-3 sm:p-4 bg-green-50 border border-green-200 rounded-lg">
     <h4 className="text-sm sm:text-base font-semibold text-[#26374a] mb-3">{title}</h4>
@@ -87,11 +87,11 @@ export function StepperSection({
   const [completedSteps, setCompletedSteps] = useState<number[]>([])
   const containerRef = useRef<HTMLDivElement>(null)
 
-  // Handle clicking outside accordions to close them
+  // outside click to close accordion, idk anyore
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
-        // Close any open step when clicking outside the container
+        // kill me plz, my head hurts
         if (expandedStep !== null) {
           setExpandedStep(null)
         }
@@ -104,7 +104,7 @@ export function StepperSection({
     }
   }, [expandedStep, setExpandedStep])
 
-  // Options configuration
+  // Options config
   const processingTimeOptions = {
     "10 to 20 business days or more": { fee: 0 },
     "2 to 9 business days": { fee: 0 },
@@ -122,7 +122,7 @@ export function StepperSection({
     "Replacing a lost or stolen passport": { fee: 45 }
   }
 
-  // Handler functions
+  // Handler funcs
   const handleProcessingTimeChange = (value: string) => {
     setSelectedProcessingTime(value)
     setShowEmergencyDisclaimer(value === "By the end of the next business day (Emergencies only)")
@@ -288,9 +288,9 @@ export function StepperSection({
             </ul>
           </div>
     
-          {/* Accordion Sections with reduced spacing */}
+          {/* Accordion Sections */}
           <div className="space-y-2">
-            {/* Mental Incapacity */}
+            {/* Mental incapacity lmao */}
             <details className="border border-gray-300 rounded group">
               <summary className="p-3 sm:p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer list-none focus:ring-2 focus:ring-blue-500 focus:ring-inset">
                 <div className="flex items-center justify-between">
@@ -327,7 +327,7 @@ export function StepperSection({
               </div>
             </details>
     
-            {/* Minor Mental Incapacity */}
+            {/* another minor Mental incapacity */}
             <details className="border border-gray-300 rounded group">
               <summary className="p-3 sm:p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer list-none focus:ring-2 focus:ring-blue-500 focus:ring-inset">
                 <div className="flex items-center justify-between">
@@ -377,7 +377,7 @@ export function StepperSection({
               </div>
             </details>
     
-            {/* Large Print Forms */}
+            {/* Large print fforms */}
             <details className="border border-gray-300 rounded group">
               <summary className="p-3 sm:p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer list-none focus:ring-2 focus:ring-blue-500 focus:ring-inset">
                 <div className="flex items-center justify-between">
@@ -441,7 +441,7 @@ export function StepperSection({
               </div>
             </details>
     
-            {/* Damaged Passport */}
+            {/* Damaged passport */}
             <details className="border border-gray-300 rounded group">
               <summary className="p-3 sm:p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer list-none focus:ring-2 focus:ring-blue-500 focus:ring-inset">
                 <div className="flex items-center justify-between">
@@ -986,7 +986,7 @@ export function StepperSection({
       subtitle: `Estimated fee: $${totalFee}`,
       content: (
         <div className="space-y-4 sm:space-y-6">
-          {/* Processing Time Section */}
+          {/* Processing time sec */}
           <div className="space-y-4">
             <h3 className="text-base sm:text-lg font-semibold text-[#26374a]">When do you need the passport? <span className="text-red-600">(required)</span></h3>
             <div 
@@ -1011,7 +1011,7 @@ export function StepperSection({
               ))}
             </div>
 
-            {/* Emergency Disclaimer Dropdown */}
+            {/* Emergency disclaimer dropdown, this is incomplete, but comoponent can be reused later*/}
             {showEmergencyDisclaimer && (
               <div className="mt-4 p-3 sm:p-4 bg-orange-50 border border-orange-200 rounded-lg" role="alert" aria-live="polite">
                 <div className="flex items-start space-x-3">
@@ -1057,7 +1057,7 @@ export function StepperSection({
             </div>
           </div>
 
-          {/* Additional Options Section */}
+          {/* Additional options secs */}
           <div className="space-y-4">
             <h3 className="text-base sm:text-lg font-semibold text-[#26374a]">Additional options:</h3>
             <div className="space-y-3" role="group" aria-label="Additional options">
@@ -1090,7 +1090,7 @@ export function StepperSection({
             </div>
           </div>
 
-          {/* Fee Calculation Summary */}
+          {/* Fee calculation summary */}
           <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-[#f5f5f5] border border-gray-300" aria-live="polite" aria-atomic="true">
             <h4 className="text-base sm:text-lg font-bold text-[#26374a] mb-4">Fee Calculation</h4>
             <div className="space-y-2">
@@ -1130,7 +1130,7 @@ export function StepperSection({
             </div>
           </div>
 
-          {/* Payment Methods Disclaimer */}
+          {/* Payment methods disclaimer */}
           <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-blue-50 border border-blue-200 rounded-lg">
             <h4 className="text-base sm:text-lg font-bold text-[#26374a] mb-4">Payment Information</h4>
             <p className="text-sm sm:text-base text-[#333333] mb-3">
@@ -1156,7 +1156,7 @@ export function StepperSection({
             </p>
           </div>
 
-          {/* No Refunds Disclaimer */}
+          {/* No refunds disclaimer */}
           <div className="mt-4 sm:mt-6 p-4 sm:p-6 bg-red-50 border border-red-200 rounded-lg">
             <h4 className="text-base sm:text-lg font-bold text-[#26374a] mb-4">No Refunds Policy</h4>
             <p className="text-sm sm:text-base text-[#333333] mb-3">
@@ -1182,7 +1182,7 @@ export function StepperSection({
       content: (
         <div className="space-y-4 sm:space-y-6">
           <div className="space-y-2">
-            {/* Applied by Mail */}
+            {/* Applied by mail */}
             <details className="border border-gray-300 rounded group">
               <summary className="p-3 sm:p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer list-none focus:ring-2 focus:ring-blue-500 focus:ring-inset">
                 <div className="flex items-center justify-between">
@@ -1219,7 +1219,7 @@ export function StepperSection({
               </div>
             </details>
     
-            {/* Applied in Person */}
+            {/* Applied in person */}
             <details className="border border-gray-300 rounded group">
               <summary className="p-3 sm:p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer list-none focus:ring-2 focus:ring-blue-500 focus:ring-inset">
                 <div className="flex items-center justify-between">
@@ -1267,7 +1267,7 @@ export function StepperSection({
               </div>
             </details>
     
-            {/* Moving Before Receiving Passport */}
+            {/* Moving before receiving passport */}
             <details className="border border-gray-300 rounded group">
               <summary className="p-3 sm:p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer list-none focus:ring-2 focus:ring-blue-500 focus:ring-inset">
                 <div className="flex items-center justify-between">
@@ -1314,7 +1314,7 @@ export function StepperSection({
       <div className="">
         {steps.map((step, index) => (
           <div key={step.id} className="relative">
-            {/* Connecting line - Dynamic height based on expanded state */}
+            {/* Connecting line - dynamic height based on expanded state */}
             {index < steps.length - 1 && (
               <div
                 className="absolute left-3 sm:left-4 w-0.5 bg-gray-400 z-0"
